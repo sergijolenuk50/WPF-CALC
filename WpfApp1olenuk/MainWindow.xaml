@@ -1,0 +1,201 @@
+﻿<Window x:Class="WpfApp1olenuk.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1olenuk"
+        mc:Ignorable="d"
+        Title="Calculator" Height="525" Width="350">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label
+            x:Name="resalt"
+            Grid.ColumnSpan="4"
+            VerticalAlignment="Bottom"
+            HorizontalAlignment="Center"
+            Content=""
+            />
+        <Button x:Name="ac" Content="AC"
+                Grid.Row="1"
+                Foreground="{StaticResource foregraundColor}"
+                Margin="5"
+                Click="ac_Click"
+                Background="{StaticResource operatorsColor}"
+         />
+        <Button x:Name="negatibBTN" Content="+/-"
+                Grid.Row="1"
+                Grid.Column="1"
+               Foreground="{StaticResource foregraundColor}"
+                Margin="5"
+                Click="negatibBTN_Click"
+                Background="{StaticResource operatorsColor}"
+                
+         />
+        <Button x:Name="interestBTN" Content="%"
+                Grid.Row="1"
+                Grid.Column="2"
+               Foreground="{StaticResource foregraundColor}"
+                Margin="5"
+                Click="interestBTN_Click"
+                Background="{StaticResource operatorsColor}"
+                
+         />
+        <Button x:Name="devisionBTN" Content="/"
+                Grid.Row="1"
+                Grid.Column="3"
+                Foreground="{StaticResource foregraundColor}"
+                Margin="5"
+                Click="devisionBTN_Click"
+                Background="{StaticResource operatorsColor}"
+                
+         />
+        <Button x:Name="sevenBTN" Content="7"
+                Grid.Row="2"
+                Grid.Column="0"
+               Foreground="{StaticResource foregraundColor}"
+                Margin="5"
+                Click="sevenBTN_Click"
+                Background="{StaticResource numbercolor}"
+         />
+        <Button x:Name="eightBTN" Content="8"
+                Grid.Row="2"
+                Grid.Column="1"
+               Foreground="{StaticResource foregraundColor}"
+                Margin="5"
+                Click="eightBTN_Click"
+               Background="{StaticResource numbercolor}"
+                
+         />
+        <Button x:Name="naneBTN" Content="9"
+                Grid.Row="2"
+                Grid.Column="2"
+               Foreground="{StaticResource foregraundColor}"
+                Margin="5"
+                Click="naneBTN_Click"
+                Background="{StaticResource numbercolor}"
+                
+         />
+        <Button x:Name="idittionBTN" Content="+"
+                Grid.Row="2"
+                Grid.Column="3"
+                Foreground="{StaticResource foregraundColor}"
+                Margin="5"
+                Click="idittionBTN_Click"
+                Background="{StaticResource operatorsColor}"
+                
+         />
+        <Button x:Name="substractionBTN" Content="-"
+                Grid.Row="3"
+                Grid.Column="3"
+               Foreground="{StaticResource foregraundColor}"
+                Margin="5"
+                Click="substractionBTN_Click"
+                Background="{StaticResource operatorsColor}"
+                
+         />
+        <Button x:Name="sixBTN" Content="6"
+                Grid.Row="3"
+                Grid.Column="2"
+                Foreground="{StaticResource foregraundColor}"
+                Margin="5"
+                Click="sixBTN_Click"
+                Background="{StaticResource numbercolor}"
+                
+         />
+        <Button x:Name="fiveBTN" Content="5"
+                Grid.Row="3"
+                Grid.Column="1"
+               Foreground="{StaticResource foregraundColor}"
+                Margin="5"
+                Click="fiveBTN_Click"
+               Background="{StaticResource numbercolor}"
+                
+         />
+        <Button x:Name="fourBTN" Content="4"
+                Grid.Row="3"
+                Grid.Column="0"
+               Foreground="{StaticResource foregraundColor}"
+                Margin="5"
+                Click="fourBTN_Click"
+                Background="{StaticResource numbercolor}"
+                
+         />
+        <Button x:Name="freeBTN" Content="3"
+                Grid.Row="4"
+                Grid.Column="2"
+                Foreground="{StaticResource foregraundColor}"
+                Margin="5"
+                Click="freeBTN_Click"
+               Background="{StaticResource numbercolor}"
+                
+         />
+        <Button x:Name="twoBTN" Content="2"
+                Grid.Row="4"
+                Grid.Column="1"
+               Foreground="{StaticResource foregraundColor}"
+                Margin="5"
+                Click="twoBTN_Click"
+               Background="{StaticResource numbercolor}"
+                
+         />
+        <Button x:Name="oneBTN" Content="1"
+                Grid.Row="4"
+                Grid.Column="0"
+                Foreground="{StaticResource foregraundColor}"
+                Margin="5"
+                Click="oneBTN_Click"
+               Background="{StaticResource numbercolor}"
+                
+         />
+        <Button x:Name="multiplicationBTN" Content="*"
+                Grid.Row="4"
+                Grid.Column="3"
+               Foreground="{StaticResource foregraundColor}"
+                Margin="5"
+                Click="multiplicationBTN_Click"
+                Background="{StaticResource operatorsColor}"
+                
+         />
+        <Button x:Name="nullBTN" Content="0"
+                Grid.Row="5"
+                Grid.Column="0"
+                Foreground="{StaticResource foregraundColor}"
+                Margin="5"
+                Click="nullBTN_Click"
+                Background="{StaticResource operatorsColor}"
+                
+         />
+        <Button x:Name="pointBTN" Content="."
+                Grid.Row="5"
+                Grid.Column="1"
+                Foreground="{StaticResource foregraundColor}"
+                Margin="5"
+                Click="pointBTN_Click"
+                Background="{StaticResource operatorsColor}"
+                
+         />
+        <Button x:Name="resBTN" Content="="
+                Grid.Row="5"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                Foreground="{StaticResource foregraundColor}"
+                Margin="5"
+                Click="resBTN_Click"
+                Background="{StaticResource operatorsColor}"
+                
+         />
+    </Grid>
+</Window>
